@@ -8,6 +8,7 @@ public class MainApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        PhraseApp.init(this, "", "");
+        PhraseApp.setup(this, "", "");
+        PhraseApp.updateTranslations();
     }
 }
