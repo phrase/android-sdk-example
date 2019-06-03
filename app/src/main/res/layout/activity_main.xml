@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:subtitle="@string/app_subtitle"
+        app:title="@string/app_name">
+
+    </androidx.appcompat.widget.Toolbar>
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
