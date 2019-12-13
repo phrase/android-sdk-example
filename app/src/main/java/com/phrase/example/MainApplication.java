@@ -1,14 +1,14 @@
-package com.phraseapp.example;
+package com.phrase.example;
 
 import android.app.Application;
 
-import com.phraseapp.android.sdk.PhraseApp;
+import com.phrase.android.sdk.Phrase;
 
 public class MainApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-        PhraseApp.setup(this, "", "");
-        PhraseApp.updateTranslations();
+        Phrase.setup(this, "", "");
+        Phrase.updateTranslations();
     }
 }

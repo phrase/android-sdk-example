@@ -1,4 +1,4 @@
-package com.phraseapp.example;
+package com.phrase.example;
 
 import org.junit.Test;
 

@@ -1,6 +1,5 @@
-package com.phraseapp.example;
+package com.phrase.example;
 
-import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class MainActivity extends BaseActivity {
