@@ -1,13 +1,17 @@
 package com.phrase.example;
 
 import android.content.Context;
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 import com.phrase.android.sdk.Phrase;
 
 public class BaseActivity extends AppCompatActivity {
+    @NonNull
     @Override
-    protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(Phrase.wrap(newBase));
+    public AppCompatDelegate getDelegate() {
+        return Phrase.getDelegate(this, super.getDelegate());
     }
 }
