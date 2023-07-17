@@ -16,6 +16,6 @@ public class MainApplication extends Application {
 
     @Override
     protected void attachBaseContext(Context newBase) {
-        super.attachBaseContext(Phrase.wrapApplicationContext(newBase));
+        super.attachBaseContext(Phrase.wrapContext(newBase));
     }
 }
