@@ -11,5 +11,16 @@ class MainActivity : BaseActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        findViewById<ComposeView>(R.id.compose_view).setContent {
+            Phrase {
+                MaterialTheme {
+                    Text(
+                        text = stringResource(R.string.hello_world),
+                        style = MaterialTheme.typography.h3
+                    )
+                }
+            }
+        }
     }
 }
