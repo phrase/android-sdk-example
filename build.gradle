@@ -22,7 +22,11 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        maven { url 'https://jitpack.io' }
+
+        maven {
+            name "s3"
+            url "https://maven.download.phrase.com"
+        }
     }
 }
 

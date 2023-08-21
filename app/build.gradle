@@ -42,13 +42,14 @@ android {
 
 dependencies {
     def phraseVersion = "3.4.0"
+    def phraseComposeVersion = "3.2.5"
     def composeBom = platform('androidx.compose:compose-bom:2023.06.01')
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation 'androidx.appcompat:appcompat:1.6.1'
     implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    implementation "com.github.phrase:android-sdk:$phraseVersion"
-    implementation "com.github.phrase.android-sdk:android-sdk-compose:$phraseVersion"
+    implementation "com.phrase.android:ota-sdk:$phraseVersion"
+    implementation "com.phrase.android:ota-sdk-compose:$phraseComposeVersion"
     implementation composeBom
     implementation 'androidx.compose.material:material'
 
