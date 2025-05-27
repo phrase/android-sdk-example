@@ -2,4 +2,5 @@
     <string name="app_name">OTA Example</string>
     <string name="hello_world">Hello World</string>
     <string name="app_subtitle">from Phrase</string>
+    <string name="custom_view_text">Custom View Text</string>
 </resources>
